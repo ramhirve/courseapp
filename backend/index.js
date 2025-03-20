@@ -24,15 +24,33 @@ app.use(
     tempFileDir: "/tmp/"
   })
 );
-app.use(cors({
-  origin:process.env.FRONTEND_URL,
-  credentials:true,
-  method:["GET","POST","PUT","DELETE"],
-  allowedHeaders:["Content-Type","Authorization"],
-  }))
+// app.use(cors({
+//   origin: process.env.FRONTEND_URL,
+//   credentials: true,
+//   method:["GET","POST","PUT","DELETE"],
+//   allowedHeaders:["Content-Type","Authorization"],
+//   }))
 
-const port = process.env.PORT || 3000;
-const DB_URI = process.env.MONGO_URI
+// const port = process.env.PORT || 3000;
+// const DB_URI = process.env.MONGO_URI
+
+const allowedOrigins = ["https://courseapp-five-alpha.vercel.app"];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 
 try{
    await mongoose.connect(DB_URI)
