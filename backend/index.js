@@ -25,9 +25,7 @@ app.use(
   })
 );
 app.use(cors({
-  //origin:process.env.FRONTEND_URL,
-  //origin: "*",
-  orgin: "https://courseapp-theta.vercel.app",
+  origin:process.env.FRONTEND_URL,
   credentials:true,
   method:["GET","POST","PUT","DELETE"],
   allowedHeaders:["Content-Type","Authorization"],
