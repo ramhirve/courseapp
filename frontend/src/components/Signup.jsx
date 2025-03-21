@@ -181,7 +181,7 @@ function Signup() {
         </div>
         <div className='flex flex-col md:flex-row gap-3 w-full md:w-auto'>
           <Link to={'/login'} className='border px-4 py-3 rounded w-full text-center'>Login</Link>
-          <Link to={'/courses'} className='bg-sky-500 hover:bg-sky-700 text-blue-950 border px-4 py-3 rounded w-full text-center'>User</Link>
+          <Link to={'/courses'} className='bg-sky-900 hover:bg-sky-600 border px-4 py-3 rounded w-full text-center'>User</Link>
         </div>
       </header>
 
