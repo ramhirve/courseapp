@@ -58,7 +58,7 @@ function AdminLogin() {
             >
               Signup
             </Link>
-            <Link to={'/login'} className='hover:bg-orange-500 border px-4 py-2 rounded border-gray-500 w-full text-center'>User</Link>
+            <Link to={'/login'} className='hover:bg-orange-500 p-1 text-sm md:text-md md:py-2 md:px-4 rounded-md border border-gray-500'>User</Link>
           </div>
         </header>
 

@@ -60,7 +60,7 @@ function Login() {
             </Link>
             <Link
               to={"/admin/signup"}
-              className="hover:bg-orange-500 p-1 text-sm md:text-md md:py-2 md:px-4 rounded-md border px-4 py-3"
+              className="hover:bg-orange-500 p-1 text-sm md:text-md md:py-2 md:px-4 rounded-md border border-gray-500"
             >
               Admin
             </Link>
