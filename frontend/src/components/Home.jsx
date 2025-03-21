@@ -77,10 +77,6 @@ function Home() {
             {isLoggedIn ? (
               <button onClick={handleLogout} className="border px-4 py-2 rounded w-full md:w-auto">Logout</button>
             ) : (
-              // <>
-              //   <Link to="/login" className="border px-4 py-2 rounded w-full md:w-auto text-center">Login</Link>
-              //   <Link to="/signup" className="border px-4 py-2 rounded w-full md:w-auto text-center">Signup</Link>
-              // </>
               <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
                 <Link to="/login" className="border px-4 py-3 rounded w-full text-center">Login</Link>
                 <Link to="/signup" className="border px-4 py-3 rounded w-full text-center">Signup</Link>
