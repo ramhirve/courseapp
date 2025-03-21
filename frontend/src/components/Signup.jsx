@@ -56,7 +56,7 @@ function Signup() {
           </div>
         </header>
 
-        {/* Signup Form */}
+        {/* Signup Form */} 
         <div className='bg-gray-900 p-8 rounded-lg shadow-lg w-[500px] mt-20 '>
           <h2 className='text-2xl font-bold mb-4 text-center'>
             Welcome to <span className='text-orange-500'>CourseHaven</span>
