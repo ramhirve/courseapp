@@ -54,7 +54,7 @@ function AdminLogin() {
           <div className="flex items-center space-x-4">
             <Link
               to="/admin/signup"
-              className="border border-gray-500 px-4 py-2 text-sm md:text-md rounded-md hover:bg-orange-500"
+              className="border border-gray-500 px-4 py-2 text-sm md:text-md rounded-md"
             >
               Signup
             </Link>
