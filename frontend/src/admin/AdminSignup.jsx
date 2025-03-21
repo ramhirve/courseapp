@@ -184,7 +184,7 @@ function AdminSignup() {
         </div>
         <div className="flex items-center space-x-4">
           <Link to={'/admin/login'} className="py-2 px-4 border border-gray-500 rounded-md">Login</Link>
-          <Link to={'/signup'} className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md text-white">User</Link>
+          <Link to={'/signup'} className=" hover:bg-orange-500 border border-gray-500 px-4 py-2 rounded-md text-white">User</Link>
         </div>
       </header>
 
