@@ -36,7 +36,7 @@
 //     } catch (error) {
 //       if (error.response) {
 //         setErrorMessage(error.response.data.errors || "Signup Failed!!!")
-      
+
 //       }
 //     }
 //   }
@@ -179,19 +179,9 @@ function Signup() {
             CourseHaven
           </Link>
         </div>
-        <div className="flex items-center space-x-4">
-          <Link
-            to={"/login"}
-            className="bg-transparent text-white py-2 px-4 border border-gray-500 rounded-md hover:bg-gray-700 transition"
-          >
-            Login
-          </Link>
-          <Link
-            to={"/courses"}
-            className="bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition"
-          >
-            Join now
-          </Link>
+        <div className='flex flex-col md:flex-row gap-3 w-full md:w-auto'>
+          <Link to={'/login'} className='border px-4 py-3 rounded w-full text-center'>Login</Link>
+          <Link to={'/courses'} className='bg-orange-100 text-blue-950 border px-4 py-3 rounded w-full text-center hover:bg-transparent'>User</Link>
         </div>
       </header>
 
