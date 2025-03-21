@@ -19,7 +19,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response =await axios.post(`${BACKEND_URL}/user/signup`, {
+      const response = await axios.post(`${BACKEND_URL}/user/signup`, {
         firstName,
         lastName,
         email,
@@ -36,7 +36,7 @@ function Signup() {
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data.errors || "Signup Failed!!!")
-      
+
       }
     }
   }
@@ -50,13 +50,27 @@ function Signup() {
             <img src={logo} alt="logo" className='h-10 w-10 rounded-full' />
             <Link to={"/"} className="text-xl font-bold text-orange-500">CourseHaven</Link>
           </div>
-          <div className='flex items-center space-x-4'>
+          {/* <div className='flex items-center space-x-4'>
             <Link to={'/login'} className='bg-transparent text-white py-2 px-4 border border-gray-500 rounded-md'>Login</Link>
             <Link to={'/courses'} className='bg-orange-500 text-white py-2 px-4 rounded-md'>Join now</Link>
+          </div> */}
+
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <Link
+              to="/login"
+              className="w-full sm:w-auto text-center border border-gray-500 text-white py-3 px-6 rounded-md transition hover:bg-gray-700">
+              Login
+            </Link>
+            <Link
+              to="/signup"
+              className="w-full sm:w-auto text-center bg-orange-500 text-white py-3 px-6 rounded-md transition hover:bg-blue-600">
+              Signup
+            </Link>
           </div>
+
         </header>
 
-        {/* Signup Form */} 
+        {/* Signup Form */}
         <div className='bg-gray-900 p-8 rounded-lg shadow-lg w-[500px] mt-20 '>
           <h2 className='text-2xl font-bold mb-4 text-center'>
             Welcome to <span className='text-orange-500'>CourseHaven</span>
@@ -116,7 +130,7 @@ function Signup() {
             </div>
             {errorMessage && (
               <div className='mb-4 text-red-500 text-center'>
-                {errorMessage }
+                {errorMessage}
               </div>
             )}
             <button type='submit'
