@@ -50,8 +50,8 @@ function AdminSignup() {
             <Link to={"/"} className="text-xl font-bold text-orange-500">CourseHaven</Link>
           </div>
           <div className='flex items-center space-x-4'>
-            <Link to={'/admin/login'} className='bg-transparent text-white py-2 px-4 border border-gray-500 rounded-md'>Login</Link>
-            <Link to={'/courses'} className='bg-sky-900 hover:bg-sky-700 border px-4 py-3 rounded w-full text-center'>User</Link>
+            <Link to={'/admin/login'} className='bg-transparent py-2 px-4 border border-gray-500 rounded-md'>Login</Link>
+            <Link to={'/signup'} className='bg-sky-900 hover:bg-sky-700 border px-4 py-2 rounded border-gray-500 w-full text-center'>User</Link>
           </div>
         </header>
 

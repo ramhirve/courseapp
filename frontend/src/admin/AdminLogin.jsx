@@ -58,12 +58,7 @@ function AdminLogin() {
             >
               Signup
             </Link>
-            <Link
-              to={"/courses"}
-              className="bg-orange-500 p-1 text-sm md:text-md md:py-2 md:px-4 rounded-md"
-            >
-              Join now
-            </Link>
+            <Link to={'/login'} className='bg-sky-900 hover:bg-sky-700 border px-4 py-2 rounded border-gray-500 w-full text-center'>User</Link>
           </div>
         </header>
 
