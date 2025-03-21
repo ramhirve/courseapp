@@ -38,17 +38,6 @@ function Signup() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-r from-black to-blue-950 text-white">
       
-      {/* Header */}
-      {/* <header className="w-full flex justify-between items-center px-5 py-3 bg-gradient-to-r from-black to-blue-950">
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="logo" className="h-10 w-10 rounded-full" />
-          <Link to="/" className="text-xl font-bold text-orange-500">CourseHaven</Link>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Link to={'/login'} className="py-2 px-4 border border-gray-500 rounded-md">Login</Link>
-          <Link to={'/courses'} className="hover:bg-orange-500 border border-gray-500 px-4 py-2 rounded-md text-white">Courses</Link>
-        </div>
-      </header> */}
       <header className="w-full flex justify-between items-center px-5 py-3 bg-gradient-to-r from-black to-blue-950">
               <div className="flex items-center space-x-2">
                 <img src={logo} alt="logo" className="h-10 w-10 rounded-full" />
@@ -56,7 +45,7 @@ function Signup() {
               </div>
               <div className="flex items-center space-x-4">
                 <Link to={'/login'} className="py-2 px-4 border border-gray-500 rounded-md">Login</Link>
-                <Link to={'/courses'} className=" hover:bg-orange-500 border border-gray-500 px-4 py-2 rounded-md text-white">User</Link>
+                <Link to={'/courses'} className=" hover:bg-orange-500 border border-gray-500 px-4 py-2 rounded-md text-white">Courses</Link>
               </div>
             </header>
 
