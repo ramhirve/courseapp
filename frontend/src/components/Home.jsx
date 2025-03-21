@@ -118,7 +118,7 @@
 //                         ) : (<> 
 //                             <Link to={'/login'} className='bg-transparent text-white py-2 px-4 border border-white rounded'>Login</Link>
 //                             <Link to={'/signup'} className='bg-transparent text-white py-2 px-4 border border-white rounded'>Signup</Link>
-                           
+
 //                         </>)}
 //                     </div>
 //                 </header>
@@ -198,7 +198,7 @@
 
 
 
-import React, { useEffect, useState } from "react"; 
+import React, { useEffect, useState } from "react";
 import logo from "../../public/logo.webp";
 import { Link, useNavigate } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -277,10 +277,15 @@ function Home() {
             {isLoggedIn ? (
               <button onClick={handleLogout} className="border px-4 py-2 rounded w-full md:w-auto">Logout</button>
             ) : (
-              <>
-                <Link to="/login" className="border px-4 py-2 rounded w-full md:w-auto text-center">Login</Link>
-                <Link to="/signup" className="border px-4 py-2 rounded w-full md:w-auto text-center">Signup</Link>
-              </>
+              // <>
+              //   <Link to="/login" className="border px-4 py-2 rounded w-full md:w-auto text-center">Login</Link>
+              //   <Link to="/signup" className="border px-4 py-2 rounded w-full md:w-auto text-center">Signup</Link>
+              // </>
+              <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
+                <Link to="/login" className="border px-4 py-3 rounded w-full text-center">Login</Link>
+                <Link to="/signup" className="border px-4 py-3 rounded w-full text-center">Signup</Link>
+              </div>
+
             )}
           </div>
         </header>
@@ -316,43 +321,43 @@ function Home() {
           </Slider>
         </section>
         <hr />
-       {/* Footer */}
-       <footer className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left mt-12">
-  <div>
-    <div className="flex justify-center md:justify-start items-center space-x-2">
-      <img src={logo} alt="logo" className="h-10 w-10 rounded-full" />
-      <h1 className="text-2xl text-orange-500 font-bold">CourseHeaven</h1>
-    </div>
-    <div className="mt-3">
-      <p>Follow us</p>
-      <div className="flex justify-center md:justify-start space-x-4 mt-2">
-        <FaFacebook className="text-2xl hover:text-blue-400 transition" />
-        <FaInstagram className="text-2xl hover:text-pink-400 transition" />
-        <FaTwitter className="text-2xl hover:text-blue-400 transition" />
-      </div>
-    </div>
-  </div>
+        {/* Footer */}
+        <footer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center md:text-left mt-12">
+          <div>
+            <div className="flex justify-center md:justify-start items-center space-x-2">
+              <img src={logo} alt="logo" className="h-10 w-10 rounded-full" />
+              <h1 className="text-2xl text-orange-500 font-bold">CourseHeaven</h1>
+            </div>
+            <div className="mt-3">
+              <p>Follow us</p>
+              <div className="flex justify-center md:justify-start space-x-4 mt-2">
+                <FaFacebook className="text-2xl hover:text-blue-400 transition" />
+                <FaInstagram className="text-2xl hover:text-pink-400 transition" />
+                <FaTwitter className="text-2xl hover:text-blue-400 transition" />
+              </div>
+            </div>
+          </div>
 
-  <div>
-    <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-    <ul className="text-gray-400 space-y-2">
-      <li className="hover:text-white">Telegram - CourseHeaven</li>
-      <li className="hover:text-white">YouTube - CourseHeaven</li>
-      <li className="hover:text-white">GitHub - CourseHeaven</li>
-    </ul>
-  </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul className="text-gray-400 space-y-2">
+              <li className="hover:text-white">Telegram - CourseHeaven</li>
+              <li className="hover:text-white">YouTube - CourseHeaven</li>
+              <li className="hover:text-white">GitHub - CourseHeaven</li>
+            </ul>
+          </div>
 
-  <div>
-    <h3 className="text-lg font-semibold mb-4">© 2025</h3>
-    <ul className="text-gray-400 space-y-2">
-      <li className="hover:text-white">Terms & Conditions</li>
-      <li className="hover:text-white">Privacy Policy</li>
-      <li className="hover:text-white">Refund & Cancellation</li>
-    </ul>
-  </div>
-</footer>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">© 2025</h3>
+            <ul className="text-gray-400 space-y-2">
+              <li className="hover:text-white">Terms & Conditions</li>
+              <li className="hover:text-white">Privacy Policy</li>
+              <li className="hover:text-white">Refund & Cancellation</li>
+            </ul>
+          </div>
+        </footer>
 
-            
+
 
       </div>
     </div>

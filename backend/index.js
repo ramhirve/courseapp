@@ -31,8 +31,7 @@ app.use(
 //   allowedHeaders:["Content-Type","Authorization"],
 //   }))
 
-// const port = process.env.PORT || 3000;
-// const DB_URI = process.env.MONGO_URI
+// 
 
 const allowedOrigins = ["https://courseapp-five-alpha.vercel.app"];
 
@@ -51,6 +50,9 @@ app.use(
   })
 );
 
+const port = process.env.PORT || 3000;
+
+const DB_URI = process.env.MONGO_URI
 
 try{
    await mongoose.connect(DB_URI)
